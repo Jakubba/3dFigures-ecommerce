@@ -25,7 +25,7 @@ This project is built using modern technologies:
 
 ### 🎨 Frontend:
 
-- 🚀 **Vue.js** – framework for building dynamic user interfaces
+- 🚀 **React** – framework for building dynamic user interfaces
 - 📜 **JavaScript** – main programming language of the application
 - 🎨 **SASS** – CSS preprocessor for better styling organization
 - 🖼️ **Swiper.js** – interactive slider for product presentation
