@@ -1,0 +1,578 @@
+.frame-only {
+  position: relative;
+  transition: filter 0.25s ease-in-out;
+}
+.frame-only::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-gold-top-left.svg'),
+    url('../assets/image/frame/double-ornament-gold-top-right.svg'),
+    url('../assets/image/frame/double-ornament-gold-bottom-left.svg'),
+    url('../assets/image/frame/double-ornament-gold-bottom-right.svg');
+  background-size:
+    93px 93px,
+    93px 93px,
+    93px 93px,
+    93px 93px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+  transform-origin: center;
+  transform: rotate(0);
+  z-index: 20;
+  transition: background-image 0.5s ease-in-out;
+}
+.frame-only::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 6px solid #4a3c27;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  transition: border 0.5s ease-in-out;
+}
+
+.line-brown-frame::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/ornament-top-left.svg'),
+    url('../assets/image/frame/ornament-top-right.svg'),
+    url('../assets/image/frame/ornament-bottom-left.svg'),
+    url('../assets/image/frame/ornament-bottom-right.svg');
+
+  background-size:
+    93px 93px,
+    93px 93px,
+    93px 93px,
+    93px 93px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+  transform-origin: center;
+  transform: rotate(0);
+  z-index: 20;
+  transition: background-image 0.5s ease-in-out;
+}
+.line-brown-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #a4895a;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    center top,
+    center bottom,
+    center left,
+    center right;
+  background-size:
+    100% 8px,
+    100% 8px,
+    8px auto,
+    8px auto;
+  transform-origin: center;
+  z-index: 15;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.base-frame {
+  position: relative;
+  transition: filter 0.25s ease-in-out;
+}
+.base-frame:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.8));
+}
+.base-frame .card-content {
+  border: 5px solid #4a3c27;
+  transition: border 0.25s ease-in-out;
+}
+.base-frame:hover .card-content {
+  border: 5px solid #0c2831;
+}
+.base-frame:hover .main-img {
+  transform: scale(1.05);
+  transition: transform 0.25s ease-in-out;
+}
+.base-frame::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-gold-top-left.svg'),
+    url('../assets/image/frame/double-ornament-gold-top-right.svg'),
+    url('../assets/image/frame/double-ornament-gold-bottom-left.svg'),
+    url('../assets/image/frame/double-ornament-gold-bottom-right.svg');
+  background-size:
+    93px 93px,
+    93px 93px,
+    93px 93px,
+    93px 93px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+  transform-origin: center;
+  transform: rotate(0);
+  z-index: 20;
+  transition: background-image 0.5s ease-in-out;
+}
+.base-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-gold-top.svg'),
+    url('../assets/image/frame/double-ornament-gold-bottom.svg'),
+    url('../assets/image/frame/double-ornament-gold-left.svg'),
+    url('../assets/image/frame/double-ornament-gold-right.svg');
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    center top,
+    center bottom,
+    center left,
+    center right;
+  background-size:
+    auto 8px,
+    auto 8px,
+    8px auto,
+    8px auto;
+  transform-origin: center;
+  z-index: 10;
+  transition: background-image 0.5s ease-in-out;
+}
+.base-frame:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-blue-top-left.svg'),
+    url('../assets/image/frame/double-ornament-blue-top-right.svg'),
+    url('../assets/image/frame/double-ornament-blue-bottom-left.svg'),
+    url('../assets/image/frame/double-ornament-blue-bottom-right.svg');
+  background-size:
+    93px 93px,
+    93px 93px,
+    93px 93px,
+    93px 93px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+  transform-origin: center;
+  transform: rotate(0);
+  z-index: 20;
+}
+.base-frame:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-blue-top.svg'),
+    url('../assets/image/frame/double-ornament-blue-bottom.svg'),
+    url('../assets/image/frame/double-ornament-blue-left.svg'),
+    url('../assets/image/frame/double-ornament-blue-right.svg');
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    center top,
+    center bottom,
+    center left,
+    center right;
+  background-size:
+    auto 8px,
+    auto 8px,
+    8px auto,
+    8px auto;
+  transform-origin: center;
+
+  z-index: 20;
+}
+
+.border-frame {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #a4895a;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      url('../assets/image/icons/card-ornament-gold-top-left.svg'),
+      url('../assets/image/icons/card-ornament-gold-top-right.svg'),
+      url('../assets/image/icons/card-ornament-gold-bot-left.svg'),
+      url('../assets/image/icons/card-ornament-gold-bot-right.svg');
+    background-size:
+      93px 93px,
+      93px 93px,
+      93px 93px,
+      93px 93px;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-position:
+      left top,
+      right top,
+      left bottom,
+      right bottom;
+    transform-origin: center;
+    transform: rotate(0);
+    z-index: 20;
+    transition: background-image 0.5s ease-in-out;
+  }
+}
+
+.line-white-frame::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/white-ornament-top-left.svg'),
+    url('../assets/image/frame/white-ornament-top-right.svg'),
+    url('../assets/image/frame/white-ornament-bottom-left.svg'),
+    url('../assets/image/frame/white-ornament-bottom-right.svg');
+  background-size:
+    53px 53px,
+    53px 53px,
+    53px 53px,
+    53px 53px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+  transform-origin: center;
+  transform: rotate(0);
+  z-index: 20;
+  transition: background-image 0.5s ease-in-out;
+}
+.line-white-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    center top,
+    center bottom,
+    center left,
+    center right;
+  background-size:
+    100% 8px,
+    100% 8px,
+    8px auto,
+    8px auto;
+  transform-origin: center;
+  z-index: 15;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.simple-frame::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/ornament-top-left.svg'),
+    url('../assets/image/frame/ornament-top-right.svg'),
+    url('../assets/image/frame/ornament-bottom-left.svg'),
+    url('../assets/image/frame/ornament-bottom-right.svg');
+  background-size:
+    93px 93px,
+    93px 93px,
+    93px 93px,
+    93px 93px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+  transform-origin: center;
+  transform: rotate(0);
+  z-index: 20;
+  transition: background-image 0.5s ease-in-out;
+}
+.simple-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #a4895a;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    center top,
+    center bottom,
+    center left,
+    center right;
+  background-size:
+    100% 8px,
+    100% 8px,
+    8px auto,
+    8px auto;
+  transform-origin: center;
+  z-index: 15;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.frame-button {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      url('../assets/image/button/button-bg-left.svg'),
+      url('../assets/image/button/button-bg-right.svg');
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-position:
+      left center,
+      right center;
+    transform-origin: center;
+    z-index: 20;
+    transition: background-image 0.5s ease-in-out;
+  }
+}
+
+.frame-brown::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-gold-top-left.svg'),
+    url('../assets/image/frame/double-ornament-gold-top-right.svg'),
+    url('../assets/image/frame/double-ornament-gold-bottom-left.svg'),
+    url('../assets/image/frame/double-ornament-gold-bottom-right.svg');
+  background-size:
+    93px 93px,
+    93px 93px,
+    93px 93px,
+    93px 93px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+  transform-origin: center;
+  transform: rotate(0);
+  z-index: 20;
+  transition: background-image 0.5s ease-in-out;
+}
+.frame-brown::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-gold-top.svg'),
+    url('../assets/image/frame/double-ornament-gold-bottom.svg'),
+    url('../assets/image/frame/double-ornament-gold-left.svg'),
+    url('../assets/image/frame/double-ornament-gold-right.svg');
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    center top,
+    center bottom,
+    center left,
+    center right;
+  background-size:
+    auto 8px,
+    auto 8px,
+    8px auto,
+    8px auto;
+  transform-origin: center;
+  z-index: 15;
+  transition: background-image 0.5s ease-in-out;
+}
+.frame-red::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-red-top-left.svg'),
+    url('../assets/image/frame/double-ornament-red-top-right.svg'),
+    url('../assets/image/frame/double-ornament-red-bottom-left.svg'),
+    url('../assets/image/frame/double-ornament-red-bottom-right.svg');
+  background-size:
+    93px 93px,
+    93px 93px,
+    93px 93px,
+    93px 93px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+  transform-origin: center;
+  transform: rotate(0);
+  z-index: 20;
+  transition: background-image 0.5s ease-in-out;
+}
+.frame-red::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-red-top.svg'),
+    url('../assets/image/frame/double-ornament-red-bottom.svg'),
+    url('../assets/image/frame/double-ornament-red-left.svg'),
+    url('../assets/image/frame/double-ornament-red-right.svg');
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    center top,
+    center bottom,
+    center left,
+    center right;
+  background-size:
+    auto 8px,
+    auto 8px,
+    8px auto,
+    8px auto;
+  transform-origin: center;
+  z-index: 15;
+  transition: background-image 0.5s ease-in-out;
+}
+.frame-silver::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-silver-top-left.svg'),
+    url('../assets/image/frame/double-ornament-silver-top-right.svg'),
+    url('../assets/image/frame/double-ornament-silver-bottom-left.svg'),
+    url('../assets/image/frame/double-ornament-silver-bottom-right.svg');
+  background-size:
+    93px 93px,
+    93px 93px,
+    93px 93px,
+    93px 93px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+  transform-origin: center;
+  transform: rotate(0);
+  z-index: 20;
+  transition: background-image 0.5s ease-in-out;
+}
+.frame-silver::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url('../assets/image/frame/double-ornament-silver-top.svg'),
+    url('../assets/image/frame/double-ornament-silver-bottom.svg'),
+    url('../assets/image/frame/double-ornament-silver-left.svg'),
+    url('../assets/image/frame/double-ornament-silver-right.svg');
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position:
+    center top,
+    center bottom,
+    center left,
+    center right;
+  background-size:
+    auto 8px,
+    auto 8px,
+    8px auto,
+    8px auto;
+  transform-origin: center;
+  z-index: 15;
+  transition: background-image 0.5s ease-in-out;
+}

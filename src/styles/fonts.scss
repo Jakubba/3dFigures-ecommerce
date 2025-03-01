@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@font-face {
+  font-family: 'Cattedrale';
+  src: url('./../assets/fonts/Cattedrale-Demo-Regular.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Reddit Sans', sans-serif !important;
+}
+.font-secondary {
+  font-family: 'Cattedrale', sans-serif !important;
+}
